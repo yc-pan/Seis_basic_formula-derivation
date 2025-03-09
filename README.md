@@ -1,0 +1,1 @@
+# Seis_basic_formula-derivation
