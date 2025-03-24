@@ -11,7 +11,7 @@ $$
 p = \frac{\sin i(z)}{v(z)} = \text{常数}
 $$
 
-其中 $i(z)$ 是射线在深度 $z$ 处与垂直方向的夹角，$v(z)$ 是介质的速度。在地表（$z=0$）处，参数简化为：
+其中 $i(z)$ 是射线在深度 $z$ 处与垂直方向的夹角，$v(z)$ 是介质的速度。在地表($z=0$)处，参数简化为：
 
 $$
 p = \frac{\sin i_0}{v_0}, \quad i_0 = i(z=0)
@@ -44,23 +44,30 @@ $$
 能量通量 $\epsilon$ 表示单位面积上的能量密度。总能量 $k$ 分布在波前面积 $A$ 上：
 
 $$
-\epsilon = \frac{k}{A}
+\epsilon = \frac{E}{A}
+$$
+
+其中, $E$ 是 $i_0$ 这一个圆环上的能量, 假设$k$是总能量
+
+$$
+E=ksini_0 di_0
 $$
 
 波前面积由射线管的几何扩展决定。考虑两相邻射线在震中距 $X$ 处的微小夹角 $di_0$，对应的波前面积元素为：
 
 $$
-dA = 2\pi X \cdot \left| \frac{dX}{di_0} \right|^{-1} di_0
+dA = 2\pi X \cdot dX
 $$
 
 **解释：**
 - $2\pi X$：半径为 $X$ 的圆周长度（环状波前）。
-- $\left| \frac{dX}{di_0} \right|^{-1}$：射线管宽度随 $di_0$ 的变化率（几何扩展因子）。
+
+假设地震波从震源出发，以不同的出射角 $i_0$ 传播。两条相邻射线的出射角相差 $di_0$，在到达震中距 $X$ 时，它们的横向分离为 $dX$ 。波前面积即为这两条射线围成的环形区域的面积。
 
 代入能量通量公式：
 
 $$
-\epsilon = \frac{k}{2\pi X \cdot \left| \frac{dX}{di_0} \right|^{-1}} = \frac{k}{2\pi} \cdot \frac{1}{X} \left| \frac{di_0}{dX} \right|
+\epsilon = \frac{k sini_0 di_0}{2\pi X dX} = \frac{k}{2\pi} \cdot \frac{sini_0}{X} \left| \frac{di_0}{dX} \right|
 $$
 
 ---
